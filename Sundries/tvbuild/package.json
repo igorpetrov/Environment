@@ -1,0 +1,17 @@
+{
+  "name": "rutube-smarttv-builder",
+  "version": "2.0.0",
+  "description": "Rutube application for multiple Smart TV and STB platforms",
+  "repository": {
+    "type": "svn",
+    "url": "http://svn.rutube.ru/tv-samsung"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "~3.1.0",
+    "grunt-copy-mate": "~0.1.3",
+    "grunt-run": "~0.3.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compress": "~0.13.0"
+  }
+}

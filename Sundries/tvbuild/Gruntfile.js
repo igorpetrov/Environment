@@ -5,7 +5,13 @@ module.exports = function (grunt) {
 
     grunt.config.init({
         config: {
-            tmpDir: './tmp/'
+            tmpDir: './package'
+        },
+
+        clean: {
+            build: {
+                src: ['<%= config.tmpDir %>**/*']
+            }
         },
 
         copy_mate: {
@@ -42,25 +48,19 @@ module.exports = function (grunt) {
                     src: '**/*'
                 }]
             }
-        },
-
-        clean: {
-            build: {
-                src: ['<%= config.tmpDir %>']
-            }
         }
     });
 
     grunt.registerTask('default', [
+    	'clean',
         'copy_mate',
-        'compress',
-        'clean'
+        'compress'
     ]);
 
     grunt.registerTask('prod', [
+    	'clean',
         'copy_mate',
         'run',
-        'compress',
-        'clean'
+        'compress'
     ]);
 };

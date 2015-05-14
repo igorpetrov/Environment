@@ -124,6 +124,8 @@ set autoread
 " Treat less files as css
 au BufNewFile,BufRead *.less set filetype=css
 
+" Highlight Nginx config files (http://www.vim.org/scripts/script.php?script_id=1886)
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 
 "-----------------"
 " Include plugins "

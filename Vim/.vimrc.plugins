@@ -27,3 +27,5 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'EvanDotPro/nerdtree-symlink'
 Plugin 'vim-scripts/nginx.vim'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
+

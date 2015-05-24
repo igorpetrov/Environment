@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                         '.idea'
                     ]
                 },
-                src: '../tv/',
+                src: '/data/tv/',
                 destDir: '<%= config.tmpDir %>'
             }
         },

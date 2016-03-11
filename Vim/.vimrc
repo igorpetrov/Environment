@@ -208,7 +208,6 @@ hi Type ctermfg=14
 
 " nerdtree "
 " remove arrows in dirs
-let g:NERDTreeDirArrows=0
 let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
 " see also customization of solarized colorscheme

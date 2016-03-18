@@ -30,3 +30,6 @@ export NVM_DIR="/home/ip/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
+# setup tizen
+export TIZEN_SDK_HOME="$HOME/.tizen-sdk"
+export PATH=$PATH:$TIZEN_SDK_HOME/tools/ide/bin

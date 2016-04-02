@@ -5,31 +5,39 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+# prompt
 PS1='\[\033[01;31m\]\u@\h\[\033[00m\] \[\033[01;35m\]\w\[\033[00m\] $ '
 
-# enable color support of ls and also add handy aliases
+# dircolors
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-# setup editor
+# aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias all='systemctl --all'
+alias failed='systemctl --failed'
+
+# editor
 export VISUAL="vim"
 
-# setup pyenv
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# setup nvm
+# nvm
 export NVM_DIR="/home/ip/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
-# setup tizen
+# tizen
 export TIZEN_SDK_HOME="$HOME/.tizen-sdk"
 export PATH=$PATH:$TIZEN_SDK_HOME/tools/ide/bin
+source $TIZEN_SDK_HOME/tools/ide/bin/tizen-autocomplete
+
+# grunt autocomplete
+eval "$(grunt --completion=bash)"

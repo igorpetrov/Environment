@@ -41,3 +41,4 @@ source $TIZEN_SDK_HOME/tools/ide/bin/tizen-autocomplete
 
 # grunt autocomplete
 eval "$(grunt --completion=bash)"
+

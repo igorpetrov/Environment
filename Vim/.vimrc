@@ -148,8 +148,6 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#excludes=[]
 " configure how numbers are calculated in tab mode
 let g:airline#extensions#tabline#tab_nr_type=1
-" enable/disable displaying buffers with a single tab
-let g:airline#extensions#tabline#show_buffers=0
 " enable/disable displaying tab type (far right)
 let g:airline#extensions#tabline#show_tab_type=0
 " Name of buffer - only filename instead of path"
@@ -158,6 +156,8 @@ let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#show_close_button=0
 " tab number format
 let g:airline#extensions#tabline#buffer_nr_show='%s:'
+" 
+let g:airline#extensions#bufferline#enabled=1
 
 " Sections
 function! airline#parts#filetype()
@@ -210,6 +210,8 @@ hi Type ctermfg=14
 " remove arrows in dirs
 let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '~'
 " see also customization of solarized colorscheme
 "-------------------------------------"
 

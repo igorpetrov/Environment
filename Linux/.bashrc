@@ -42,3 +42,6 @@ source $TIZEN_SDK_HOME/tools/ide/bin/tizen-autocomplete
 # grunt autocomplete
 eval "$(grunt --completion=bash)"
 
+# android studio
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

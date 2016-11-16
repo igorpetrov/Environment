@@ -45,3 +45,4 @@ eval "$(grunt --completion=bash)"
 # android studio
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+

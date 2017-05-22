@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "workbench.activityBar.visible": true,
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderLineHighlight": "all",
+  "files.insertFinalNewline": true,
+  "editor.rulers": [120],
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "vscode-simpler-icons",
+  "typescript.check.npmIsInstalled": false,
+  "editor.renderIndentGuides": true,
+  "explorer.autoReveal": false,
+  "editor.minimap.enabled": true
+}

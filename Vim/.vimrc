@@ -160,9 +160,6 @@ let g:airline#extensions#tabline#buffer_nr_show='%s:'
 let g:airline#extensions#bufferline#enabled=1
 
 " Sections
-function! airline#parts#filetype()
-    return &filetype != '' ? &filetype : '[No Filetype]'
-endfunction
 function! AirLineInit()
     let spc = g:airline_symbols.space
     let g:airline_section_b = airline#section#create(['tagbar', 'filetype'])

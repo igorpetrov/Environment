@@ -12,5 +12,9 @@
   "typescript.check.npmIsInstalled": false,
   "editor.renderIndentGuides": true,
   "explorer.autoReveal": false,
-  "editor.minimap.enabled": true
+  "editor.minimap.enabled": true,
+  "editor.fontFamily": "'DejaVu Sans Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+  "material-icon-theme.showUpdateMessage": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.confirmSync": false
 }
